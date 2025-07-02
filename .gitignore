@@ -1,27 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# === Node/React Frontend (client) ===
 /node_modules
-
-# next.js
+/client/node_modules
 /.next/
 /out/
-
-# production
 /build
 
-# debug
+# Debug & Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
+# Vercel (if used)
+/.vercel
+
+# Env files
 .env*
+/client/.env*
+/server/.env*
 
-# vercel
-.vercel
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# === Python/Flask Backend (server) ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+instance/
+server/instance/
